@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
+  background-color: #eee;
 }
 .main-container {
   display: flex;
@@ -31,24 +32,44 @@ body {
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
+
     
 }
 
 .wording{
     display: flex;
     flex-direction: column;
+    margin-left: 100px;
 }
 ul{
     list-style: none;
+    list-style-type: none;
+    padding: 0;
     
 }
+
+label{
+    display: inline-block;
+    
+}
+
 .form-container{
-    background-color: purple;
+    background-color: #fff;
 
 }
 
+#dothis{
+    margin-left: 100px;
+}
 #coolform{
     flex:auto;
     display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
     
+}
+
+.below-card{
+    padding-top: 3rem;
+    margin-left: 100px;
 }
