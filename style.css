@@ -1,0 +1,54 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.main-container {
+  display: flex;
+}
+
+.left-container{
+    display: flex;
+    justify-content: center;
+
+}
+#imig {
+  width: 40vw;
+  height: 100vh;
+  position: relative;
+  object-fit: cover;
+}
+
+#company {
+  position: absolute;
+  
+  color: white;
+  font-size: calc(2rem + 5vw);
+  align-self: center;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    
+}
+
+.wording{
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    list-style: none;
+    
+}
+.form-container{
+    background-color: purple;
+
+}
+
+#coolform{
+    flex:auto;
+    display: flex;
+    
+}
