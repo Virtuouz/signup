@@ -1,7 +1,24 @@
+:root{
+    --left-margin: min(100px,5vw);
+    --accent-color:hsl(170, 65%, 45%);
+}
+
+@font-face{
+    font-family: roboto;
+    src: url(Fonts/roboto-regular-webfont.woff);
+}
+
+@font-face{
+    font-family: megrim;
+    src: url(Fonts/megrim-regular-webfont.woff)
+}
+
 body {
   margin: 0px;
   padding: 0px;
   background-color: #eee;
+  font-family: roboto;
+
 }
 .main-container {
   display: flex;
@@ -19,13 +36,23 @@ body {
   object-fit: cover;
 }
 
-#company {
-  position: absolute;
-  
-  color: white;
-  font-size: calc(2rem + 5vw);
-  align-self: center;
+#black-background{
+    position: absolute;
+    align-self: center;
+    background-color: black;
+    opacity: 0.6;
+    width: 40vw;
+    height: calc(4rem + 5vw);
 }
+
+#company {
+    position: absolute;
+    color: white;
+    font-size: calc(2rem + 5vw);
+    align-self: center;
+    font-family: megrim;
+  
+  }
 
 .right-container{
     display: flex;
@@ -39,7 +66,16 @@ body {
 .wording{
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    margin-left: var(--left-margin);
+    max-width: 60rem;
+}
+
+#wording1{
+    margin-bottom: 0px;
+}
+
+#wording2{
+    margin-top: 0px;
 }
 ul{
     list-style: none;
@@ -48,28 +84,65 @@ ul{
     
 }
 
-label{
-    display: inline-block;
-    
-}
+
 
 .form-container{
     background-color: #fff;
+    box-shadow:0 4px 2px -1px rgb(214, 210, 210);
 
 }
 
+#form-left,
+#form-right{
+    padding-right: calc(3rem + 10vw);
+}
+
+label{
+    display: inline-block;
+    width: 12rem;
+    
+}
+
+input[type="text"]{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 7px;
+    appearance: none;
+    outline: none;
+    border-color: #E5E7EB;
+}
+
 #dothis{
-    margin-left: 100px;
+    margin-left: var(--left-margin);
 }
 #coolform{
     flex:auto;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 100px;
-    
+    margin-left: var(--left-margin);
+    justify-content:space-between;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(76, 83, 90);
 }
 
 .below-card{
     padding-top: 3rem;
-    margin-left: 100px;
+    margin-left: var(--left-margin);
+}
+
+#btn-create-account{
+    background-color: var(--accent-color);
+    height:5rem;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.link{
+    color: var(--accent-color);
+    font-weight: 700;
+    text-decoration: none;
 }
