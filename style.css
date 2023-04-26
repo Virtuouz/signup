@@ -81,9 +81,11 @@ ul{
     list-style: none;
     list-style-type: none;
     padding: 0;
-    
 }
 
+.input{
+    margin: 0rem 0rem 3rem 0rem;
+}
 
 
 .form-container{
@@ -141,8 +143,12 @@ input[type="text"]{
     border-style: none;
 }
 
-.link{
+a:link{
     color: var(--accent-color);
     font-weight: 700;
     text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
